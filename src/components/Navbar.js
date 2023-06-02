@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import '../Styles.css';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+// import '../Styles.css';
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,13 +15,16 @@ function Navbar() {
         <h1>Jeremie Garod</h1>
       </div>
 
-      <div className={`menu-toggle ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
+      <div
+        className={`menu-toggle ${isMenuOpen ? "active" : ""}`}
+        onClick={toggleMenu}
+      >
         <span></span>
         <span></span>
         <span></span>
       </div>
 
-      <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
+      <ul className={`nav-links ${isMenuOpen ? "open" : ""}`}>
         <li>
           <Link to="/" className="nav-link" onClick={toggleMenu}>
             Accueil
