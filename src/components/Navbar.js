@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import '../Styles.css';
-import { FaHome } from "react-icons/fa";
+import { FaHome, FaUser, FaShoppingCart, FaEnvelope, FaPowerOff, FaPlay  } from "react-icons/fa";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,27 +27,27 @@ function Navbar() {
           </li>
           <li className="nav-item">
             <Link to="/boutique" className="nav-link" onClick={toggleMenu}>
-              Boutique
+              Boutique <span className="sr-only"></span> <FaPlay className="icon-right" />
             </Link>
           </li>
           <li className="nav-item">
             <Link to="/panier" className="nav-link" onClick={toggleMenu}>
-              Panier
+              Panier <span className="sr-only"></span> <FaShoppingCart className="icon-right" />
             </Link>
           </li>
           <li className="nav-item">
             <Link to="/contact" className="nav-link" onClick={toggleMenu}>
-              Contact
+              Contact <span className="sr-only"></span> <FaEnvelope className="icon-right" />
             </Link>
           </li>
           <li className="nav-item">
             <Link to="/connexion" className="nav-link" onClick={toggleMenu}>
-              Connexion / Inscription
+              Connexion / Inscription <span className="sr-only"></span> <FaUser className="icon-right" />
             </Link>
           </li>
           <li className="nav-item">
             <Link to="/deconnexion" className="nav-link" onClick={toggleMenu}>
-              Déconnexion
+              Déconnexion <span className="sr-only"></span> <FaPowerOff className="icon-right" />
             </Link>
           </li>
         </ul>
