@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import '../Styles.css';
+import { FaHome } from "react-icons/fa";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,17 +22,32 @@ function Navbar() {
         <ul className="navbar-nav mr-auto">
           <li className="nav-item active">
             <Link to="/" className="nav-link" onClick={toggleMenu}>
-              Home <span className="sr-only">(current)</span>
+              Accueil <span className="sr-only"></span> <FaHome className="icon-right" />
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/features" className="nav-link" onClick={toggleMenu}>
-              Features
+            <Link to="/boutique" className="nav-link" onClick={toggleMenu}>
+              Boutique
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/pricing" className="nav-link" onClick={toggleMenu}>
-              Pricing
+            <Link to="/panier" className="nav-link" onClick={toggleMenu}>
+              Panier
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/contact" className="nav-link" onClick={toggleMenu}>
+              Contact
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/connexion" className="nav-link" onClick={toggleMenu}>
+              Connexion / Inscription
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/deconnexion" className="nav-link" onClick={toggleMenu}>
+              Déconnexion
             </Link>
           </li>
         </ul>
