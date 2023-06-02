@@ -42,6 +42,7 @@
 .navbar-toggler {
   display: block;
   cursor: pointer;
+  border: none !important;
 }
 
 .navbar-collapse {
@@ -62,6 +63,37 @@
   transform: translateX(0);
 }
 
+/* Animation du burger menu lorsqu'il est ouvert */
+.active span:first-child {
+  transform: rotate(45deg) translate(30%, 30%);
+}
+
+.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.active span:last-child {
+  transform: rotate(-45deg) translate(30%, -30%);
+}
+
+/* Style du menu affiché/masqué */
+navbar-collapse {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff; /* Couleur du fond du menu */
+  padding: 18%;
+  border: 1px solid #333; /* Bordure du menu */
+  border-top: none;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  opacity: 0; /* Par défaut, le menu est masqué */
+  visibility: hidden; /* Par défaut, le menu est invisible */
+  transition: opacity 0.3s ease, visibility 0.3s ease; /* Transition pour l'animation */
+}
+
 .nav-link {
   margin: 10px 0;
 }
@@ -75,6 +107,8 @@ li {
 .icon-right {
   margin-left: 25px;
   justify-content: space-between;
-  
 }
 
+.button {
+  border: none !important;
+}
