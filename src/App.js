@@ -3,7 +3,8 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import Carousel from "./components/Carousel"
+import Carousel from "./components/Carousel";
+import Presentation from "./components/Presentation";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Carousel/>
+        <Presentation/>
         <Footer/>
       </div>
     </Router>

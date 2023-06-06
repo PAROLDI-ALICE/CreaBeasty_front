@@ -13,7 +13,7 @@ function Navbar() {
   return (
     <nav className={`navbar ${isMenuOpen ? "open" : ""}`}>
       <div className="logo">
-        <h1>Navbar</h1>
+        <h1>CreaBeasty</h1>
       </div>
       <button className={`navbar-toggler first-button ${isMenuOpen ? "active" : ""}`} type="button" onClick={toggleMenu}>
         <div className="animated-icon1">
