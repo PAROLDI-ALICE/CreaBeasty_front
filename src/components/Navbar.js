@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import '../Styles.css';
-import { FaHome, FaUser, FaShoppingCart, FaEnvelope, FaPowerOff, FaPlay  } from "react-icons/fa";
+import { FaHome, FaUser, FaShoppingCart, FaEnvelope, FaPowerOff, FaPlay } from "react-icons/fa";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,15 +11,19 @@ function Navbar() {
   };
 
   return (
-    <nav className="navbar navbar-light amber lighten-4 mb-4">
+    <nav className={`navbar ${isMenuOpen ? "open" : ""}`}>
       <div className="logo">
         <h1>Navbar</h1>
       </div>
       <button className={`navbar-toggler first-button ${isMenuOpen ? "active" : ""}`} type="button" onClick={toggleMenu}>
-        <div className="animated-icon1"><span></span><span></span><span></span></div>
+        <div className="animated-icon1">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </button>
-      <div className={`collapse navbar-collapse ${isMenuOpen ? "open" : ""}`} id="navbarSupportedContent20">
-        <ul className="navbar-nav mr-auto">
+      <div className={`navbar-collapse ${isMenuOpen ? "open" : ""}`}>
+        <ul className="navbar-nav">
           <li className="nav-item active">
             <Link to="/" className="nav-link" onClick={toggleMenu}>
               Accueil <span className="sr-only"></span> <FaHome className="icon-right" />
