@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import '../Styles.css';
 import { FaHome, FaUser, FaShoppingCart, FaEnvelope, FaPowerOff, FaPlay } from "react-icons/fa";
 
@@ -24,10 +24,10 @@ function Navbar() {
       </button>
       <div className={`navbar-collapse ${isMenuOpen ? "open" : ""}`}>
         <ul className="navbar-nav">
-          <li className="nav-item active">
-            <Link to="/" className="nav-link" onClick={toggleMenu}>
-              Accueil <span className="sr-only"></span> <FaHome className="icon-right" />
-            </Link>
+          <li className="nav-item">
+            <NavLink to="/" className="nav-link" onClick={toggleMenu}>
+              Accueil<span className="sr-only"></span> <FaHome className="icon-right" />
+            </NavLink>
           </li>
           <li className="nav-item">
             <Link to="/boutique" className="nav-link" onClick={toggleMenu}>
