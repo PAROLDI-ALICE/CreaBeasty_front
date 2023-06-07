@@ -1,14 +1,9 @@
-body{
-  overflow-x: hidden;
-}
-
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #f2f2f2;
- 
- 
+  overflow-x: hidden;
 }
 
 .logo {
@@ -27,15 +22,6 @@ body{
   background-color: #333;
   margin-bottom: 5px;
   display: block;
-}
-
-.navbar-collapse {
-  display: flex;
-  list-style: none;
-  justify-content: flex-end;
-  align-items: center;
-  overflow-x: hidden;
-  white-space: nowrap;
 }
 
 .nav-link {
@@ -57,13 +43,12 @@ body{
 
 .navbar-collapse {
   position: absolute;
-  right: 0;
+  right: 15px;
   top: 15%;
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 20%;
   transform: translateX(100%);
   transition: transform 0.3s ease-in;
   overflow-x: hidden;
@@ -132,7 +117,9 @@ li {
   position: relative;
   left: 0;
   bottom: 0;
-  width: 100%;
+  width: 95%;
+  height: 50px; 
+  margin: 20px;
  
   }
   
