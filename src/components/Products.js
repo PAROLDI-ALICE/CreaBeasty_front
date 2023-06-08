@@ -1,12 +1,12 @@
 import React from "react";
 
-function Product() {
+function Contact() {
   return (
-    <div>
+    <div className="container-xxl">
       <h2>Contact</h2>
       {/* Ajoutez ici le contenu de la page de contact */}
     </div>
   );
 }
 
-export default Product;
+export default Contact;

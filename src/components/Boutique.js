@@ -3,7 +3,7 @@ import React from "react";
 
 function Boutique() {
   return (
-    <div>
+    <div className="container-xxl">
       <h2>Boutique</h2>
       {/* Ajoutez ici le contenu de la page de la boutique */}
     </div>
