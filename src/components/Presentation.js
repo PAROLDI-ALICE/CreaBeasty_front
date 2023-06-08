@@ -3,8 +3,8 @@ import "../Styles.css";
 
 const Presentation = () => {
   return (
-    <div className="container-xxl grid">
-      <div className="card">
+    <div className="grid">
+      <div className="card_pres">
         <h3>Titre 1</h3>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -16,7 +16,7 @@ const Presentation = () => {
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum.</p>
       </div>
-      <div className="card">
+      <div className="card_pres">
         <h3>Titre 2</h3>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -28,7 +28,7 @@ const Presentation = () => {
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum.</p>
       </div>
-      <div className="card">
+      <div className="card_pres">
         <h3>Titre 3</h3>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -40,7 +40,7 @@ const Presentation = () => {
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum.</p>
       </div>
-      <div className="card">
+      <div className="card_pres">
         <h3>Titre 4</h3>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting

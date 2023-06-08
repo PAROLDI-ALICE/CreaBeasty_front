@@ -197,11 +197,6 @@ function Connexion() {
           </div>
         </div>
       </div>
-      <div className="card card2">
-        <div className="card-body">
-          <p>Ceci est le contenu de la deuxième carte sans onglets.</p>
-        </div>
-      </div>
     </div>
   );
 }
