@@ -11,7 +11,7 @@ function Navbar() {
   };
 
   return (
-    <nav className={`navbar container-xxl ${isMenuOpen ? "open" : ""}`}>
+    <nav className={`navbar${isMenuOpen ? "open" : ""}`}>
       <div className="logo">
         <h1>CreaBeasty</h1>
       </div>

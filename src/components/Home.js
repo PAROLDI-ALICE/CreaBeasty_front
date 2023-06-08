@@ -5,7 +5,7 @@ import Presentation from "./Presentation";
 
 function Home() {
   return (
-    <div className="container-xxl">
+    <div>
       <Carousel/>
       <Presentation/>
      

@@ -5,16 +5,18 @@ import Home from "./components/Home";
 import Boutique from "./components/Boutique";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Connexion from "./components/Connexion";
 
 function App() {
   return (
     <Router>
-      <div className="App container-xxl">
+      <div>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/boutique" element={<Boutique />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/connexion" element={<Connexion/>} />
         </Routes>
         <Footer />
       </div>
