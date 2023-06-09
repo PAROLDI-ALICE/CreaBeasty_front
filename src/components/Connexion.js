@@ -11,7 +11,7 @@ function Connexion() {
     password: "",
     confirmPassword: "",
     captcha: false,
-    gdpr: false
+    gdpr: false,
   });
 
   const handleTabChange = (tab) => {
@@ -24,14 +24,14 @@ function Connexion() {
 
     setFormData((prevData) => ({
       ...prevData,
-      [name]: fieldValue
+      [name]: fieldValue,
     }));
   };
 
   const handleChangeCaptcha = (value) => {
     setFormData((prevData) => ({
       ...prevData,
-      captcha: value
+      captcha: value,
     }));
   };
 
@@ -47,7 +47,9 @@ function Connexion() {
         <ul className="nav nav-tabs" id="myTab" role="tablist">
           <li className="nav-item" role="presentation">
             <button
-              className={` button_form nav-link ${activeTab === "contact" ? "active" : ""}`}
+              className={` button_form nav-link ${
+                activeTab === "contact" ? "active" : ""
+              }`}
               id="contact-tab"
               data-bs-toggle="tab"
               data-bs-target="#contact"
@@ -62,7 +64,9 @@ function Connexion() {
           </li>
           <li className="nav-item" role="presentation">
             <button
-              className={`button_form nav-link ${activeTab === "connexion" ? "active" : ""}`}
+              className={`button_form nav-link ${
+                activeTab === "connexion" ? "active" : ""
+              }`}
               id="connexion-tab"
               data-bs-toggle="tab"
               data-bs-target="#connexion"
@@ -77,7 +81,9 @@ function Connexion() {
           </li>
           <li className="nav-item" role="presentation">
             <button
-              className={`button_form nav-link ${activeTab === "inscription" ? "active" : ""}`}
+              className={`button_form nav-link ${
+                activeTab === "inscription" ? "active" : ""
+              }`}
               id="inscription-tab"
               data-bs-toggle="tab"
               data-bs-target="#inscription"
@@ -93,7 +99,9 @@ function Connexion() {
         </ul>
         <div className="tab-content" id="myTabContent">
           <div
-            className={`tab-pane fade ${activeTab === "contact" ? "show active" : ""}`}
+            className={`tab-pane fade ${
+              activeTab === "contact" ? "show active" : ""
+            }`}
             id="contact"
             role="tabpanel"
             aria-labelledby="contact-tab"
@@ -104,7 +112,9 @@ function Connexion() {
             </div>
           </div>
           <div
-            className={`tab-pane fade ${activeTab === "connexion" ? "show active" : ""}`}
+            className={`tab-pane fade ${
+              activeTab === "connexion" ? "show active" : ""
+            }`}
             id="connexion"
             role="tabpanel"
             aria-labelledby="connexion-tab"
@@ -115,18 +125,35 @@ function Connexion() {
             </div>
           </div>
           <div
-            className={`tab-pane fade ${activeTab === "inscription" ? "show active" : ""}`}
+            className={`tab-pane fade ${
+              activeTab === "inscription" ? "show active" : ""
+            }`}
             id="inscription"
             role="tabpanel"
             aria-labelledby="inscription-tab"
           >
-            
             <div className="card-body card-content form-container">
-            <h4>INSCRIPTION</h4>
-            <div className="Rappel">
-              <span>Rappel Entreprise</span>
-            </div>
-            <p className="Rappel1">Lorem Ipsum is simply dummy text of the printing. </p>
+              <h4>INSCRIPTION</h4>
+              <div className="Rappel">
+                <span>Rappel Entreprise</span>
+              </div>
+              <p className="Rappel1">
+                Lorem Ipsum is simply dummy text of the printing.{" "}
+              </p>
+              <br />
+              <div></div>
+              <div className="Rappel">
+                <span>Remerciement</span>
+              </div>
+              <p className="Rappel1">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
+
               <form onSubmit={handleSubmit}>
                 <div>
                   <label htmlFor="name">Nom :</label>
@@ -169,7 +196,9 @@ function Connexion() {
                   />
                 </div>
                 <div>
-                  <label htmlFor="confirmPassword">Confirmer le mot de passe :</label>
+                  <label htmlFor="confirmPassword">
+                    Confirmer le mot de passe :
+                  </label>
                   <input
                     type="password"
                     id="confirmPassword"
@@ -187,7 +216,8 @@ function Connexion() {
                 </div>
                 <div>
                   <label>
-                    <input className="checkbox"
+                    <input
+                      className="checkbox"
                       type="checkbox"
                       name="gdpr"
                       checked={formData.gdpr}
@@ -196,7 +226,9 @@ function Connexion() {
                     Accepter les conditions RGPD
                   </label>
                 </div>
-                <button className="button_form" type="submit">Envoyer</button>
+                <button className="button_form" type="submit">
+                  Envoyer
+                </button>
               </form>
             </div>
           </div>
