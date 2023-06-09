@@ -47,7 +47,7 @@ function Connexion() {
         <ul className="nav nav-tabs" id="myTab" role="tablist">
           <li className="nav-item" role="presentation">
             <button
-              className={`nav-link ${activeTab === "contact" ? "active" : ""}`}
+              className={` button_form nav-link ${activeTab === "contact" ? "active" : ""}`}
               id="contact-tab"
               data-bs-toggle="tab"
               data-bs-target="#contact"
@@ -62,7 +62,7 @@ function Connexion() {
           </li>
           <li className="nav-item" role="presentation">
             <button
-              className={`nav-link ${activeTab === "connexion" ? "active" : ""}`}
+              className={`button_form nav-link ${activeTab === "connexion" ? "active" : ""}`}
               id="connexion-tab"
               data-bs-toggle="tab"
               data-bs-target="#connexion"
@@ -77,7 +77,7 @@ function Connexion() {
           </li>
           <li className="nav-item" role="presentation">
             <button
-              className={`nav-link ${activeTab === "inscription" ? "active" : ""}`}
+              className={`button_form nav-link ${activeTab === "inscription" ? "active" : ""}`}
               id="inscription-tab"
               data-bs-toggle="tab"
               data-bs-target="#inscription"
@@ -120,8 +120,13 @@ function Connexion() {
             role="tabpanel"
             aria-labelledby="inscription-tab"
           >
-           <div className="card-body card-content">
-              <h4>INSCRIPTION</h4>
+            
+            <div className="card-body card-content form-container">
+            <h4>INSCRIPTION</h4>
+            <div className="Rappel">
+              <span>Rappel Entreprise</span>
+            </div>
+            <p className="Rappel1">Lorem Ipsum is simply dummy text of the printing. </p>
               <form onSubmit={handleSubmit}>
                 <div>
                   <label htmlFor="name">Nom :</label>
@@ -182,7 +187,7 @@ function Connexion() {
                 </div>
                 <div>
                   <label>
-                    <input
+                    <input className="checkbox"
                       type="checkbox"
                       name="gdpr"
                       checked={formData.gdpr}
@@ -191,7 +196,7 @@ function Connexion() {
                     Accepter les conditions RGPD
                   </label>
                 </div>
-                <button type="submit">Envoyer</button>
+                <button className="button_form" type="submit">Envoyer</button>
               </form>
             </div>
           </div>
