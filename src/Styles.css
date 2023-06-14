@@ -398,13 +398,12 @@ p {
     display: flex;
     justify-content: center;
     margin-top: 5%;
-   
-    
+  
   }
   
   .card {
-    width: 550%;
-    max-width: 990px;
+    width: 520%;
+    max-width: 980px;
     border: 1px solid #ccc;
     border-radius: 10px;
     height: 550px;
@@ -451,6 +450,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 
   }
   
@@ -458,15 +458,15 @@ p {
     display: flex;
     flex-direction: column;
     margin-left: 50%;
-    
+    margin-top: -25%;
   }
   
   .button_form {
     padding: 10px 60px;
     background-color: rgb(50, 49, 49);
     color: white;
-    border: none;
-    border-radius: solid 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     cursor: pointer;
    
     
@@ -493,7 +493,7 @@ p {
     border-radius: 4px;
   }
 
-  
+
 
   .Rappel{
     margin-right: 500px;
@@ -508,7 +508,6 @@ p {
     margin-right: 500px;
     text-align : center;
     
-  
   }
   
   
