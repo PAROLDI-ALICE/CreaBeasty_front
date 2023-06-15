@@ -4,7 +4,10 @@ import "../Styles.css";
 import moon from "../assets/Images/moon.jpeg";
 
 function Connexion() {
+  // État pour gérer l'onglet actif
   const [activeTab, setActiveTab] = useState("contact");
+
+  // État pour stocker les données du formulaire
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -15,10 +18,12 @@ function Connexion() {
     gdpr: false,
   });
 
+  // Fonction de changement d'onglet
   const handleTabChange = (tab) => {
     setActiveTab(tab);
   };
 
+  // Fonction de gestion des changements de formulaire
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     const fieldValue = type === "checkbox" ? checked : value;
@@ -29,6 +34,7 @@ function Connexion() {
     }));
   };
 
+  // Fonction de gestion des changements du captcha
   const handleChangeCaptcha = (value) => {
     setFormData((prevData) => ({
       ...prevData,
@@ -36,6 +42,7 @@ function Connexion() {
     }));
   };
 
+  // Fonction de soumission du formulaire
   const handleSubmit = (e) => {
     e.preventDefault();
     // Logique de traitement des données du formulaire
@@ -45,7 +52,10 @@ function Connexion() {
   return (
     <div className="container">
       <div className="card-container">
-        <div className={`card card1 ${activeTab === "contact" ? "active" : ""}`}>
+        <div
+          className={`card card1 ${activeTab === "contact" ? "active" : ""}`}
+        >
+          {/* Onglets */}
           <ul className="nav nav-tabs" id="myTab" role="tablist">
             <li className="nav-item" role="presentation">
               <button
@@ -99,7 +109,10 @@ function Connexion() {
               </button>
             </li>
           </ul>
+
+          {/* Contenu des onglets */}
           <div className="tab-content" id="myTabContent">
+            {/* Onglet "Contact" */}
             <div
               className={`tab-pane fade ${
                 activeTab === "contact" ? "show active" : ""
@@ -111,6 +124,7 @@ function Connexion() {
               <div className="card-body card-content form-container">
                 <h4>CONTACT</h4>
                 <form onSubmit={handleSubmit}>
+                  {/* Champ "Nom" */}
                   <div className="form-group">
                     <label htmlFor="name">Nom :</label>
                     <input
@@ -122,6 +136,8 @@ function Connexion() {
                       className="form-control"
                     />
                   </div>
+
+                  {/* Champ "Email" */}
                   <div className="form-group">
                     <label htmlFor="email">Email :</label>
                     <input
@@ -133,6 +149,8 @@ function Connexion() {
                       className="form-control"
                     />
                   </div>
+
+                  {/* Champ "Message" */}
                   <div className="form-group">
                     <label htmlFor="message">Message :</label>
                     <textarea
@@ -143,18 +161,24 @@ function Connexion() {
                       className="form-control"
                     ></textarea>
                   </div>
+
+                  {/* Champ "ReCAPTCHA" */}
                   <div className="form-group">
                     <ReCAPTCHA
                       sitekey="YOUR_RECAPTCHA_SITE_KEY"
                       onChange={handleChangeCaptcha}
                     />
                   </div>
+
+                  {/* Bouton "Envoyer" */}
                   <button type="submit" className="btn btn-primary">
                     Envoyer
                   </button>
                 </form>
               </div>
             </div>
+
+            {/* Onglet "Connexion" */}
             <div
               className={`tab-pane fade ${
                 activeTab === "connexion" ? "show active" : ""
@@ -166,6 +190,7 @@ function Connexion() {
               <div className="card-body card-content form-container">
                 <h4>CONNEXION</h4>
                 <form onSubmit={handleSubmit}>
+                  {/* Champ "Nom d'utilisateur" */}
                   <div className="form-group">
                     <label htmlFor="username">Nom d'utilisateur :</label>
                     <input
@@ -177,6 +202,8 @@ function Connexion() {
                       className="form-control"
                     />
                   </div>
+
+                  {/* Champ "Mot de passe" */}
                   <div className="form-group">
                     <label htmlFor="password">Mot de passe :</label>
                     <input
@@ -188,17 +215,22 @@ function Connexion() {
                       className="form-control"
                     />
                   </div>
-                  <br/>
+
+                  {/* Bouton "Mot de passe perdu" */}
+                  <br />
                   <button type="reset" className="btn btn-primary">
                     Mot de passe perdu
                   </button>
-                  
+
+                  {/* Bouton "Se connecter" */}
                   <button type="submit" className="btn btn-primary">
                     Se connecter
                   </button>
                 </form>
               </div>
             </div>
+
+            {/* Onglet "Inscription" */}
             <div
               className={`tab-pane fade ${
                 activeTab === "inscription" ? "show active" : ""
@@ -210,6 +242,7 @@ function Connexion() {
               <div className="card-body card-content form-container">
                 <h4>INSCRIPTION</h4>
                 <form onSubmit={handleSubmit}>
+                  {/* Champ "Nom" */}
                   <div className="form-group">
                     <label htmlFor="name">Nom :</label>
                     <input
@@ -221,6 +254,8 @@ function Connexion() {
                       className="form-control"
                     />
                   </div>
+
+                  {/* Champ "Email" */}
                   <div className="form-group">
                     <label htmlFor="email">Email :</label>
                     <input
@@ -232,6 +267,8 @@ function Connexion() {
                       className="form-control"
                     />
                   </div>
+
+                  {/* Champ "Nom d'utilisateur" */}
                   <div className="form-group">
                     <label htmlFor="username">Nom d'utilisateur :</label>
                     <input
@@ -243,6 +280,8 @@ function Connexion() {
                       className="form-control"
                     />
                   </div>
+
+                  {/* Champ "Mot de passe" */}
                   <div className="form-group">
                     <label htmlFor="password">Mot de passe :</label>
                     <input
@@ -254,6 +293,8 @@ function Connexion() {
                       className="form-control"
                     />
                   </div>
+
+                  {/* Champ "Confirmer le mot de passe" */}
                   <div className="form-group">
                     <label htmlFor="confirmPassword">
                       Confirmer le mot de passe :
@@ -267,6 +308,8 @@ function Connexion() {
                       className="form-control"
                     />
                   </div>
+
+                  {/* Champ "Accepter les conditions d'utilisation" */}
                   <div className="form-group">
                     <label htmlFor="gdpr">
                       J'accepte les conditions d'utilisation :
@@ -279,12 +322,16 @@ function Connexion() {
                       onChange={handleChange}
                     />
                   </div>
+
+                  {/* Champ "ReCAPTCHA" */}
                   <div className="form-group">
                     <ReCAPTCHA
                       sitekey="YOUR_RECAPTCHA_SITE_KEY"
                       onChange={handleChangeCaptcha}
                     />
                   </div>
+
+                  {/* Bouton "S'inscrire" */}
                   <button type="submit" className="btn btn-primary">
                     S'inscrire
                   </button>

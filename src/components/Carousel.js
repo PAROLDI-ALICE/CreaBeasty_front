@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Styles.css';
+import collier from "../assets/Images/collier.jpeg";
 
 const Carrousel = () => {
   const mySlideRight = () => {
@@ -64,8 +65,7 @@ const Carrousel = () => {
       <div className="slider-cont" id="slider-cont">
         <div className="test-slider">
           <div className="cont-slider" onClick={selectSliderElement} id="ext-1">
-            <img className="flat-w-image image-slider" src="http://cerati.org/eoitecne/imghttp://cerati.org/eoitecne//prodotti/05.png" alt="Image 1" />
-            <img src="http://cerati.org/eoitecne/img/prodotti/05.png" className="image-w" alt="Image 1" />
+          <img src={collier} alt="Collier" />
           </div>
           <div className="cont-slider" onClick={selectSliderElement} id="ext-2">
             <img className="flat-w-image image-slider" src="http://cerati.org/eoitecne/img/prodotti/02.png" alt="Image 2" />
