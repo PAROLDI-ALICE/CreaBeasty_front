@@ -1,5 +1,6 @@
 body {
   margin: 0;
+
   overflow-x: hidden; /* Supprime la barre de défilement horizontale */
 }
 
@@ -14,6 +15,20 @@ body {
 .logo {
   font-size: 24px;
   margin-left: 20px;
+}
+
+.navContent-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.iconNavContent {
+  margin-right: 10%;
+}
+.icon-navbar {
+  height: 2em;
+  width: 2em;
+  margin-right: 1%;
 }
 
 .navbar-toggler {
@@ -113,12 +128,12 @@ li {
 /* footer */
 
 .footer {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   background-color: #f2f2f2;
   padding: 20px;
-  position: relative;
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 95%;
@@ -131,10 +146,24 @@ li {
   align-items: center;
 }
 
+.text-footer-icon {
+  flex-grow: 5;
+}
+
 .footer-social {
   display: flex;
   align-items: center;
   margin-left: 20px;
+  flex-grow: 5;
+}
+
+.text-footer {
+  flex-grow: 1;
+  margin-bottom: 1%;
+}
+
+.text-footer-icon {
+  margin-bottom: 1%;
 }
 
 .footer-social-link {
@@ -146,7 +175,7 @@ li {
 }
 
 .footer-social-icon {
-  margin-right: 5px;
+  /* margin-right: 5px; */
   font-size: 50px;
 }
 
