@@ -3,7 +3,6 @@ body {
 
   overflow-x: hidden; /* Supprime la barre de défilement horizontale */
   background-color: #ccc;
-
 }
 
 .navbar {
@@ -12,9 +11,13 @@ body {
   align-items: center;
   background-color: #f2f2f2;
   overflow-x: hidden;
-  background: rgb(149,144,144);
-  background: radial-gradient(circle, rgba(149,144,144,1) 0%, rgba(4,3,3,0.644782913165266) 42%, rgba(43,34,34,1) 81%);
-
+  background: rgb(149, 144, 144);
+  background: radial-gradient(
+    circle,
+    rgba(149, 144, 144, 1) 0%,
+    rgba(4, 3, 3, 0.644782913165266) 42%,
+    rgba(43, 34, 34, 1) 81%
+  );
 }
 
 .logo {
@@ -154,6 +157,10 @@ li {
 
 .text-footer-icon {
   flex-grow: 5;
+}
+
+.iconFooterContent {
+  margin-bottom: 1%;
 }
 
 .footer-social {
@@ -448,12 +455,10 @@ p {
 
 .filter-options input[type="checkbox"] {
   margin-right: 15px;
-  
 }
 
 .filter-options input[type="checkbox"] + span {
   margin-left: 15px;
-  
 }
 
 .card_Boutique {
