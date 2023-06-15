@@ -1,3 +1,4 @@
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -313,6 +314,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   margin-block: 5%;
   margin-left: 20%;
   margin-right: 20%;
+
+}
+@media (max-width: 767px) {
+  .grid {
+    grid-template-columns: 1fr; 
+    margin-left: 5%; 
+    margin-right: 5%;
+  }
 }
 
 .card_pres  {
@@ -394,27 +403,33 @@ p {
   
   /* Connexion */
 
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
   .card-container {
     display: flex;
     justify-content: center;
     margin-top: 5%;
-  
+    width: 100%;
+    max-width: 980px;
   }
   
   .card {
-    width: 520%;
+    width: 100%;
     max-width: 980px;
     border: 1px solid #ccc;
     border-radius: 10px;
     height: 550px;
-    
   }
   
   .nav-tabs {
     display: flex;
     margin-top: -4%;
     margin-left: -40px;
-   
   }
   
   .nav-link {
@@ -422,13 +437,11 @@ p {
     border: 1px solid transparent;
     border-bottom: none;
     border-radius: 6px 6px 0 0;
-    
   }
   
   .nav-link.active {
     background-color: #727070;
     border-color: #0d0b0b #0d0b0b transparent;
-    
   }
   
   .tab-pane {
@@ -443,22 +456,19 @@ p {
     display: flex;
     flex-direction: column;
     margin-top: -12%;
-     
   }
   
   .form-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    
-
   }
   
   form {
     display: flex;
     flex-direction: column;
-    margin-left: 50%;
-    margin-top: -25%;
+    align-items: center;
+    margin-top: 2rem;
   }
   
   .button_form {
@@ -468,9 +478,6 @@ p {
     border: 1px solid #ccc;
     border-radius: 4px;
     cursor: pointer;
-   
-    
-    
   }
   
   button:hover {
@@ -481,11 +488,10 @@ p {
     display: block;
     margin-bottom: 5px;
   }
-
-  h4{
+  
+  h4 {
     font-size: large;
-  }
-
+    text-align: center;
   input {
     height: 100%;
     padding: 6px;
@@ -493,23 +499,27 @@ p {
     border-radius: 4px;
   }
 
-
-
-  .Rappel{
-    margin-right: 500px;
-    font-size: large;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 2px;
   
-  }
-
-  .Rappel1{
-    margin-right: 500px;
-    text-align : center;
-    
+  /* CSS for mobile devices */
+  @media (max-width: 600px) {
+    .card-container {
+      margin-top: 10%;
+    }
+  
+    form {
+      margin-left: 0;
+    }
   }
   
+  /* CSS for tablets and larger screens */
+  @media (min-width: 601px) {
+    .card-container {
+      margin-top: 5%;
+    }
   
-  
-  
+    form {
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+} 
