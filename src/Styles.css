@@ -324,6 +324,18 @@ li {
   -webkit-filter: contrast(0) brightness(10);
   filter: contrast(0) brightness(10);
 }
+@media screen and (max-width: 768px) {
+  .test-slider {
+    width: 80%;
+    padding-bottom: 80%;
+    margin-left: 10%;
+  }
+
+  .image-w {
+    height: 100%;
+    width: auto;
+  }
+}
 
 /* Card Presentation */
 
