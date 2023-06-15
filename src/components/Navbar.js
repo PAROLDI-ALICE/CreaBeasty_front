@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import '../Styles.css';
 import { FaHome, FaUser, FaShoppingCart, FaEnvelope, FaPowerOff, FaPlay } from "react-icons/fa";
+import "../Styles.css";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,7 +11,7 @@ function Navbar() {
   };
 
   return (
-    <nav className={`navbar${isMenuOpen ? "open" : ""}`}>
+    <nav className={`navbar${isMenuOpen ? " open" : ""}`}>
       <div className="logo">
         <h1>CreaBeasty</h1>
       </div>
