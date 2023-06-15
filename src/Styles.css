@@ -1,6 +1,8 @@
 body {
   margin: 0;
   overflow-x: hidden; /* Supprime la barre de défilement horizontale */
+  background-color: #ccc;
+
 }
 
 .navbar {
@@ -9,11 +11,15 @@ body {
   align-items: center;
   background-color: #f2f2f2;
   overflow-x: hidden;
+  background: rgb(149,144,144);
+  background: radial-gradient(circle, rgba(149,144,144,1) 0%, rgba(4,3,3,0.644782913165266) 42%, rgba(43,34,34,1) 81%);
+
 }
 
 .logo {
   font-size: 24px;
   margin-left: 20px;
+  color: goldenrod;
 }
 
 .navbar-toggler {
@@ -413,10 +419,12 @@ p {
 
 .filter-options input[type="checkbox"] {
   margin-right: 15px;
+  
 }
 
 .filter-options input[type="checkbox"] + span {
   margin-left: 15px;
+  
 }
 
 .card_Boutique {
@@ -485,7 +493,7 @@ p {
 .card {
   width: 100%;
   max-width: 980px;
-  border: 1px solid #ccc;
+  border: 2px solid black;
   border-radius: 10px;
   height: 550px;
 }
