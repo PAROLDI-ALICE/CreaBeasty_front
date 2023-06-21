@@ -82,6 +82,7 @@ body {
   z-index: 1;
   overflow-x: hidden;
   margin-right: 0;
+  padding-right: 3%;
 }
 
 .navbar-collapse.open {
@@ -126,8 +127,8 @@ li {
 }
 
 .icon-right {
-  margin-left: 25px;
-  justify-content: space-between;
+  margin-left: 30px;
+  float: right;
 }
 
 .button {
