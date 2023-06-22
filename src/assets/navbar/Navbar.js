@@ -8,7 +8,7 @@ import {
   FaPowerOff,
   FaPlay,
 } from "react-icons/fa";
-import "../Styles.css";
+import "../navbar/navbar_style.css";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,7 +20,9 @@ function Navbar() {
   return (
     <nav className={`navbar${isMenuOpen ? " open" : ""}`}>
       <div className="logo">
-        <h1>CreaBeasty</h1>
+        <Link to="/" className="nav-link1">
+          <h1>CreaBeasty</h1>
+        </Link>
       </div>
       <div className="navContent-right">
         <div className="iconNavContent">

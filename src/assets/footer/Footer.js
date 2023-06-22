@@ -2,7 +2,7 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 import { FaShoppingCart, FaEnvelope } from "react-icons/fa";
-import "../Styles.css";
+import "../footer/footer_style.css";
 
 function Footer() {
   return (
@@ -11,12 +11,14 @@ function Footer() {
         <div className="text-footer-icon">
           <div className="iconFooterContent">
             <Link to="/contact" className="nav-link1">
-              <FaEnvelope /> Contact
+              <FaEnvelope />
+              &nbsp; &nbsp; Contact
             </Link>
           </div>
           <div className="iconFooterContent">
             <Link to="/panier" className="nav-link1">
-              <FaShoppingCart /> Commande
+              <FaShoppingCart />
+              &nbsp; &nbsp; Commande
             </Link>
           </div>
         </div>

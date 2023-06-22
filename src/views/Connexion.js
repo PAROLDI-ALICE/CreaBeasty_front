@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
-import "../Styles.css";
+import "../views/Styles.css";
 import moon from "../assets/Images/moon.jpeg";
 
 function Connexion() {

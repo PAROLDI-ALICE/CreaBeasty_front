@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import Boutique from "./components/Boutique";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import Connexion from "./components/Connexion";
+import Navbar from "./assets/navbar/Navbar";
+import Home from "./views/Home";
+import Boutique from "./views/Boutique";
+import Contact from "./views/Contact";
+import Footer from "./assets/footer/Footer";
+import Connexion from "./views/Connexion";
 
 function App() {
   return (

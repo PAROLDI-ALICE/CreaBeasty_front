@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../Styles.css";
+import "../views/Styles.css";
 import { FaFilter } from "react-icons/fa";
 import collier from "../assets/Images/collier.jpeg";
 
