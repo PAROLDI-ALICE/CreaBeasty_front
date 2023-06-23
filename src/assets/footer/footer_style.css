@@ -1,9 +1,7 @@
 /* footer */
 
+/* footer amber lighten-4 */
 .footer {
-  /* display: flex;
-    justify-content: center;
-    align-items: center; */
   background-color: #f2f2f2;
   padding: 20px;
   position: fixed;
@@ -17,6 +15,7 @@
 .footer-content {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .text-footer-icon {
@@ -29,16 +28,13 @@
 
 .footer-social {
   display: flex;
+  flex-grow: 5;
   align-items: center;
   margin-bottom: 2%;
-  flex-grow: 5;
 }
 
-.text-footer {
-  /* flex-grow: 1; */
-  margin-bottom: 2%;
-}
-
+.text-footer,
+.footerText,
 .text-footer-icon {
   margin-bottom: 2%;
 }

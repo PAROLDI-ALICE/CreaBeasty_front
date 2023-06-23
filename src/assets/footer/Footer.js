@@ -12,13 +12,13 @@ function Footer() {
           <div className="iconFooterContent">
             <Link to="/contact" className="nav-link1">
               <FaEnvelope />
-              &nbsp; &nbsp; Contact
+              &nbsp; &nbsp; contact
             </Link>
           </div>
           <div className="iconFooterContent">
             <Link to="/panier" className="nav-link1">
               <FaShoppingCart />
-              &nbsp; &nbsp; Commande
+              &nbsp; &nbsp; commande
             </Link>
           </div>
         </div>
@@ -35,10 +35,10 @@ function Footer() {
         </div>
         <div className="text-footer">
           <div className="footerText">
-            <p>Copyright</p>
+            <p>copyright</p>
           </div>
           <div className="footerText">
-            <p>Mentions Légales</p>
+            <p>mentions Légales</p>
           </div>
         </div>
       </div>
