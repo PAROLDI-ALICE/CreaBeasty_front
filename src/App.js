@@ -6,6 +6,7 @@ import Boutique from "./views/Boutique";
 import Contact from "./views/Contact";
 import Footer from "./assets/footer/Footer";
 import Connexion from "./views/Connexion";
+import ShoppingCart from "./components/ShoppingCart";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/boutique" element={<Boutique />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/connexion" element={<Connexion />} />
+          <Route path="/panier" element={<ShoppingCart />} />
         </Routes>
         <Footer />
       </div>

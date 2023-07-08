@@ -119,7 +119,7 @@ const Carrousel = () => {
               alt="Image 5"
             />
           </div>
-          <div className="cont-slider" onClick={selectSliderElement} id="ext-6">
+          {/* <div className="cont-slider" onClick={selectSliderElement} id="ext-6">
             <img
               className="flat-w-image image-slider"
               src="http://cerati.org/eoitecne/img/prodotti/06.png"
@@ -154,7 +154,7 @@ const Carrousel = () => {
               className="image-w"
               alt="Image 8"
             />
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="arrow" onClick={mySlideRight}>

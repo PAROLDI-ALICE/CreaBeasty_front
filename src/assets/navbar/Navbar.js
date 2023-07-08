@@ -8,15 +8,39 @@ import {
   FaPowerOff,
   FaPlay,
 } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 import "../navbar/navbar_style.css";
 
 function Navbar() {
+  //NAVIGATION - const pour redirection (router-dom)
+  const navigate = useNavigate();
+  //MENU
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  //DECONNEXION
+  const handleLogout = async (event) => {
+    let options = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    };
+    //on récupère le bon endpoint
+    await fetch(`http://127.0.0.1:8000/api/logout`, options)
+      .then((response) => {
+        return response.json();
+      })
+      .then((response) => {
+        if (response.success) {
+          alert("Vous êtes déconnecté(e) !");
+          console.log(response);
+          navigate("/");
+        }
+      });
+  };
   return (
     <nav className={`navbar${isMenuOpen ? " open" : ""}`}>
       <div className="logo">
@@ -84,7 +108,7 @@ function Navbar() {
               <Link
                 to="/deconnexion"
                 className="nav-link1"
-                onClick={toggleMenu}
+                onClick={handleLogout}
               >
                 Déconnexion <span className="sr-only"></span>{" "}
                 <FaPowerOff className="icon-right" />

@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  overflow-x: hidden; /* Supprime la barre de défilement horizontale */
+  /* Supprime la barre de défilement horizontale */
+  overflow-x: hidden;
   /* background-color: #ccc; */
 }
 
